@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QrCodeViewController" customModule="Tabbar" customModuleProvider="target">
+            <connections>
+                <outlet property="BottomImage" destination="Zw1-YV-MXh" id="abj-Ah-3An"/>
+                <outlet property="MoveingImage" destination="fpZ-gR-sfI" id="lUl-qB-rb0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zw1-YV-MXh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABL-Df-GbD">
+                    <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="框架" translatesAutoresizingMaskIntoConstraints="NO" id="WVM-y8-naj">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fpZ-gR-sfI">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WVM-y8-naj" firstAttribute="leading" secondItem="ABL-Df-GbD" secondAttribute="leading" id="69g-hY-boH"/>
+                        <constraint firstAttribute="trailing" secondItem="fpZ-gR-sfI" secondAttribute="trailing" id="D8L-nc-ic3"/>
+                        <constraint firstAttribute="bottom" secondItem="fpZ-gR-sfI" secondAttribute="bottom" id="Egr-2P-6ae"/>
+                        <constraint firstAttribute="width" constant="250" id="Hj8-L6-sSS"/>
+                        <constraint firstItem="fpZ-gR-sfI" firstAttribute="leading" secondItem="ABL-Df-GbD" secondAttribute="leading" id="Jt0-ny-Zmo"/>
+                        <constraint firstItem="WVM-y8-naj" firstAttribute="centerX" secondItem="ABL-Df-GbD" secondAttribute="centerX" id="KrK-eR-6tr"/>
+                        <constraint firstAttribute="bottom" secondItem="WVM-y8-naj" secondAttribute="bottom" id="UPq-Ae-hdq"/>
+                        <constraint firstAttribute="trailing" secondItem="WVM-y8-naj" secondAttribute="trailing" id="VYw-l4-GyN"/>
+                        <constraint firstAttribute="height" constant="250" id="XTE-x4-YCr"/>
+                        <constraint firstItem="WVM-y8-naj" firstAttribute="centerY" secondItem="ABL-Df-GbD" secondAttribute="centerY" id="p8Z-CG-cVo"/>
+                        <constraint firstItem="WVM-y8-naj" firstAttribute="top" secondItem="ABL-Df-GbD" secondAttribute="top" id="t3S-IY-0a8"/>
+                        <constraint firstItem="fpZ-gR-sfI" firstAttribute="top" secondItem="ABL-Df-GbD" secondAttribute="top" id="yWO-Mq-YgB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Zw1-YV-MXh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ECs-bG-u0X"/>
+                <constraint firstItem="Zw1-YV-MXh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gf7-TA-CCY"/>
+                <constraint firstItem="ABL-Df-GbD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="J33-jY-Sxw"/>
+                <constraint firstItem="ABL-Df-GbD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="MPs-px-ilc"/>
+                <constraint firstAttribute="trailing" secondItem="Zw1-YV-MXh" secondAttribute="trailing" id="qZF-zd-Wfp"/>
+                <constraint firstAttribute="bottom" secondItem="Zw1-YV-MXh" secondAttribute="bottom" id="r3O-Nh-e1s"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="框架" width="32" height="30"/>
+    </resources>
+</document>
